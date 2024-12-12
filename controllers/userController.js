@@ -1,5 +1,5 @@
 const User = require('../models/userSchema'); 
-const bcrypt = require('bcrypt'); // For password hashing and verification
+const bcrypt = require('bcryptjs'); // For password hashing and verification
 const SECRET_KEY = 'test1243rahul'
 const jwt = require('jsonwebtoken');
 

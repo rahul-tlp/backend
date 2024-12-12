@@ -148,7 +148,7 @@ async function updateToken(userData) {
     try {
         // Generate a new token
         const payload = { id: userData._id, email: userData.email };
-        const token = jwt.sign(payload, SECRET_KEY, { expiresIn: '1h' });
+        const token = jwt.sign(payload, SECRET_KEY, { expiresIn: '8760h' });
 
         // Update the token in the database and return the updated token
         const updatedUser = await User.findByIdAndUpdate(
